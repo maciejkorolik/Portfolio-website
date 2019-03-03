@@ -1,0 +1,86 @@
+/* font-family: 'Ubuntu', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+header {
+    height: 100vh;
+    background-image: url(/images/cover2.png);
+    background-position: center;
+    background-size: cover;
+    color: #222;
+    position: relative;
+}
+.hero {
+    width: 320px;
+    position: absolute;
+    top: 55%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.hero h1 {
+    font-size: 5.5em;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.hero h2 {
+    font-size: 2.4em;
+    font-weight: bold; 
+    line-height: 1.5;
+}
+
+.hero p {
+    font-size: 1.8em;
+}
+.hero span {
+    color: #2C88CB;
+}
+.profile-pic {
+    background-image: url(/images/profile.jpg);
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+    top: 15%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+}
+/* .menu {
+    background-color: #2C88CB;
+    position: sticky;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+} */
+
+
+
+/* Start of media queries */
+@media only screen and (min-width: 480px) {  
+
+}
+
+@media only screen and (min-width: 839px) {  
+
+} 
+
+@media only screen and (min-width: 1024px) {  
+
+} 
+
+
+
