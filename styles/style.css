@@ -113,7 +113,44 @@ header {
     color: #FFF;
     text-decoration: none;  
 }
+/* End of header styling */
 
+/* Start of Intro section */
+.intro {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+.intro  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro button {
+    width: 200px;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 25px;
+    font-size: 1.8em;
+    font-weight: bold;
+    border: none;
+}
+.intro button.button-contact{
+    color: #FFF;
+    background-color: #2C88CB;
+}
+.intro button.button-cv{
+    color:  #2C88CB;
+    border: 1px solid #2C88CB;
+    background-color: #FFF;
+}
+/* End of intro section */
 
 /* Start of media queries */
 @media only screen and (min-width: 480px) {  
@@ -123,7 +160,6 @@ header {
     /* Start of header styling */
     .hero {
         width: 420px;
-        position: absolute;
         top: 55%;
     }
     .profile-pic {
@@ -147,12 +183,12 @@ header {
     }
     .profile-pic {
         height: 210px;
-        width:210px;
-        margin-right: 90px;
+        width: 210px;
+        margin-right: 90px; 
+                /*sprawdzić dlaczego right nie działa*/
         top: 25%;
     }
     .menu {
-        width: 100%;
         height: 40vh;
         min-height: 300px;
     }
@@ -167,40 +203,34 @@ header {
         width: 300px;
         margin: auto;
     }
+}
     /* End of header styling */
 @media only screen and (min-width: 1024px) {  
     /* Start of header styling */
     header {
         font-size: 10px;
         height: 680px; 
-        max-width: 1440px;
-        margin: auto;
         display: flex;
         justify-content: flex-end;
     } 
     .hero {
+        font-size: 11px;
         width: 320px;
         top: 164px;
         left: 90px;
         margin:0;
     }
-
-    .hero h1 {
-        font-size: 6em;
-    }
-    
     .hamburger {
         display: none;
     }
     .menu {
         transform: none;
-        position: relative;
+        position: static;
         z-index: 0;
         background-color: rgba(44, 136, 203, 0.9);
         width: 50%;
         max-width: 600px;
         height: 680px;
-        min-height: 300px;
         justify-content: space-between;
         align-items: flex-end;
     }
@@ -237,9 +267,15 @@ header {
         right: 50%;
         top: 110px;
     }
-
+/* End of header styling */
 } 
+
 @media only screen and (min-width: 1200px) { 
+     /* Start of header styling */
+    header {
+        max-width: 1440px;
+        margin: auto;
+    }
     .hero {
         font-size: 12px;
         width: 400px;
@@ -253,6 +289,8 @@ header {
         margin-right: -150px;
         right: 600px;
     }
+    /* End of header styling */
 }
+
 
 
