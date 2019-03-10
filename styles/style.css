@@ -204,7 +204,7 @@ header {
 /* Start of main section */
 .main {
     background-color: var(--color-gray-background);
-    font-size: 10px
+    font-size: 10px;
     color: var(--color-dark-text);
 }
 /* Start of about section */
