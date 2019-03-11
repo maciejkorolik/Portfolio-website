@@ -36,7 +36,7 @@ a {
 header {
     font-size: 10px;
     height: 100vh;
-    background-image: linear-gradient(rgba(250, 250, 250, 0.6), rgba(200, 200, 200, 0.7)), url(/maciej_projekt/images/cover4.jpg);
+    background-image: linear-gradient(rgba(250, 250, 250, 0.6), rgba(200, 200, 200, 0.7)), url(../images/cover4.jpg);
     background-position: center;
     background-size: cover;
     color: var(--color-dark-text);
@@ -72,7 +72,7 @@ header {
 }
 
 .profile-pic {
-    background-image: url(/maciej_projekt/images/profile.jpg);
+    background-image: url(../images/profile.jpg);
     background-size: cover;
     position: absolute;
     border-radius: 50%;
