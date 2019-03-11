@@ -5,11 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 ul {
     list-style: none;
 }
+
 a {
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 :root {
@@ -19,6 +21,7 @@ a {
     --color-primary-transparent: rgba(44, 136, 203, 0.9);
     --color-secondary: #FDC32F;
     --color-dark-text: #222;
+    --color-gray-text: #A0A0A0;
     --color-gray-background: #F9F9F9;
 
     /* Skills variables */
@@ -26,19 +29,20 @@ a {
     --skills-css: 68%;
     --skills-js: 43%;
     --skills-responsibility: 90%;
-    --skills-communication:65%;
+    --skills-communication: 65%;
     --skills-teamwork: 75%;
 }
 
 header {
     font-size: 10px;
     height: 100vh;
-    background-image: linear-gradient(rgba(250, 250, 250, 0.6), rgba(200, 200, 200, 0.7)), url(/coderscamp_project1/images/cover4.jpg);
+    background-image: linear-gradient(rgba(250, 250, 250, 0.6), rgba(200, 200, 200, 0.7)), url(/maciej_projekt/images/cover4.jpg);
     background-position: center;
     background-size: cover;
     color: var(--color-dark-text);
     position: relative;
 }
+
 .hero {
     width: 300px;
     position: absolute;
@@ -46,24 +50,29 @@ header {
     margin: 0 calc(50% - (300px/2));
     font-family: 'Ubuntu', sans-serif;
 }
+
 .hero h2 {
     font-size: 5.5em;
     font-weight: bold;
     line-height: 1.5;
 }
+
 .hero .name {
     font-size: 2.2em;
-    font-weight: bold; 
+    font-weight: bold;
     line-height: 1.5;
 }
+
 .hero .desc {
     font-size: 1.8em;
 }
+
 .hero span {
     color: var(--color-primary-darker);
 }
+
 .profile-pic {
-    background-image: url(/coderscamp_project1/images/profile.jpg);
+    background-image: url(/maciej_projekt/images/profile.jpg);
     background-size: cover;
     position: absolute;
     border-radius: 50%;
@@ -73,6 +82,7 @@ header {
     margin: 0 calc(50% - (230px/2));
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
 }
+
 /* Hamburger animation made by Jonathan Suh @jonsuh 
     https://jonsuh.com/hamburgers */
 
@@ -82,6 +92,7 @@ header {
     right: 10px;
     z-index: 2;
 }
+
 /* menu styling */
 .menu {
     background-color: var(--color-primary);
@@ -96,9 +107,11 @@ header {
     transform: translateY(-100%);
     transition: ease-in-out 0.5s;
 }
+
 .menu-active {
     transform: none;
 }
+
 .navigation {
     display: flex;
     height: 60vh;
@@ -112,9 +125,10 @@ header {
     display: block;
     font-size: 3em;
     color: #FFF;
-    line-height:2;
+    line-height: 2;
     transition: 0.3s ease;
 }
+
 .navigation a:hover {
     color: var(--color-secondary);
     transform: scale(1.05);
@@ -127,19 +141,23 @@ header {
     justify-content: space-evenly;
 
 }
+
 .social h2 {
     font-size: 2em;
     color: #FFF;
     text-align: center;
     line-height: 3;
 }
-.social a  {
+
+.social a {
     font-size: 4em;
-    color: #FFF;   
+    color: #FFF;
 }
+
 .social i {
     transition: 0.3s ease;
 }
+
 .social a:hover i {
     color: var(--color-secondary);
     transform: scale(1.2);
@@ -154,18 +172,21 @@ header {
     color: var(--color-dark-text);
     margin: 15px 15px 40px 15px;
     text-align: center;
-    
+
 }
+
 .intro h2 {
     font-size: 2em;
     margin: 10px 0;
     font-weight: 100;
 }
-.intro  .buttons {
+
+.intro .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .intro button {
     width: 200px;
     height: 50px;
@@ -175,18 +196,21 @@ header {
     font-weight: bold;
     border: none;
 }
-.intro button.button-contact{
+
+.intro button.button-contact {
     color: #FFF;
     background-color: var(--color-primary);
     transition: 0.3s ease;
 }
+
 .intro button.button-contact:hover {
     cursor: pointer;
     color: var(--color-dark-text);
     background-color: var(--color-secondary);
 }
-.intro button.button-cv{
-    color:  var(--color-primary);
+
+.intro button.button-cv {
+    color: var(--color-primary);
     border: 1px solid var(--color-primary);
     background-color: #FFF;
     transition: 0.3s ease;
@@ -196,8 +220,9 @@ header {
     cursor: pointer;
     color: var(--color-secondary);
     border: 1px solid var(--color-secondary);
-   
+
 }
+
 /* dodać hovery!!! */
 
 /* End of intro section */
@@ -207,35 +232,41 @@ header {
     font-size: 10px;
     color: var(--color-dark-text);
 }
+
 /* Start of about section */
 #about {
     font-family: 'Ubuntu', sans-serif;
 }
+
 #about h2 {
     text-align: center;
-    font-size: 2em; 
+    font-size: 2em;
     padding-top: 15px;
     margin: 10px auto;
 }
+
 .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FFF;
     margin: 15px 20px;
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding: 15px;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
+
 .about-container .about-data {
     font-weight: bold;
     line-height: 1.7;
+    padding: 20px;
 }
+
 .about-container .about-data span {
     color: var(--color-primary);
 }
+
 .about-container p {
-    margin-top: 20px;
     border-top: 2px solid var(--color-primary);
     padding: 20px 0;
     text-align: justify;
@@ -247,23 +278,28 @@ header {
 #skills {
     font-family: 'Ubuntu', sans-serif;
 }
+
 #skills h2 {
     text-align: center;
-    font-size: 2em; 
+    font-size: 2em;
     padding-top: 15px;
     margin: 10px auto;
 }
+
 .skills-container {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
+
 .skills-container h3 {
     text-align: center;
     line-height: 2;
 }
-.skills-hard, .skills-soft {
+
+.skills-hard,
+.skills-soft {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -272,161 +308,295 @@ header {
     margin: 20px;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
+
 .skills-item {
     padding: 10px 0;
 }
+
 .skills-item p {
     font-size: 0.8em;
     line-height: 2;
 }
+
 .skills-item .slider {
     width: 100%;
     background-color: #E7E7E7;
     height: 10px;
     border-radius: 5px;
 }
+
 .slider-inner {
     height: 100%;
     background: linear-gradient(to right, var(--color-primary), var(--color-primary-darker));
     border-radius: 5px;
 }
+
 .slider-html {
     width: var(--skills-html);
 }
+
 .slider-css {
     width: var(--skills-css);
 }
+
 .slider-js {
     width: var(--skills-js);
 }
+
 .slider-responsibility {
     width: var(--skills-responsibility);
 }
+
 .slider-communication {
     width: var(--skills-communication);
 }
+
 .slider-teamwork {
     width: var(--skills-teamwork);
 }
 
 /* End of skills section */
-/* End of main section */
+/* Start of portfolio section */
+#portfolio {
+    font-family: 'Ubuntu', sans-serif;
+}
 
+#portfolio h2 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 15px;
+    margin: 10px auto;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.portfolio-item {
+    padding: 15px;
+    max-width: 400px;
+    background-color: #FFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio-img {
+    background-size: cover;
+    height: 250px;
+    /* transition: 0.5s ease; */
+}
+
+.portfolio-item:nth-child(1) .portfolio-img {
+    background-image: url(/coderscamp_project1/images/portfolio/1.jpg);
+}
+
+.portfolio-item:nth-child(2) .portfolio-img {
+    background-image: url(/coderscamp_project1/images/portfolio/2.jpg);
+}
+
+.portfolio-item:nth-child(3) .portfolio-img {
+    background-image: url(/coderscamp_project1/images/portfolio/3.jpg);
+}
+
+.portfolio-item:nth-child(4) .portfolio-img {
+    background-image: url(/coderscamp_project1/images/portfolio/4.jpg);
+}
+
+.portfolio-item:nth-child(5) .portfolio-img {
+    background-image: url(/coderscamp_project1/images/portfolio/5.jpg);
+}
+
+.portfolio-item:nth-child(6) .portfolio-img {
+    background-image: url(/coderscamp_project1/images/portfolio/6.jpg);
+}
+
+.portfolio-img--overlay {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* .portfolio-img--overlay h4 {
+    color: #FFF;
+    font-size: 1.6em;
+    text-align: center;
+}
+.portfolio-img:hover .portfolio-img--overlay {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+.portfolio-desc {
+    margin: 10px;
+}
+
+.portfolio-desc h3 {
+    font-size: 1.5em;
+}
+
+.portfolio-desc p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: var (--color-gray-text);
+}
+
+.portfolio-desc a {
+    color: var(--color-primary);
+    transition: 0.3s ease;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.portfolio-desc a:hover {
+    color: var(--color-secondary);
+}
+
+/* End of portfolio section */
+/* End of main section */
 
 /* ****Start of media queries**** */
 
-@media only screen and (min-width: 480px) {  
+@media only screen and (min-width: 480px) {
     header {
         font-size: 15px;
         min-height: 700px;
     }
+
     /* Start of header styling */
     .hero {
         width: 420px;
         top: 55%;
         margin: 0 calc(50% - (420px/2));
     }
+
     .profile-pic {
         height: 300px;
         width: 300px;
         margin: 0 calc(50% - (300px/2));
     }
+
     /* End of header styling */
     /* Start of Intro section */
     .intro h2 {
-        font-size: 3em;
+        font-size: 2.5em;
         margin: 20px 0;
     }
+
     /* End of Intro section */
+    .about-container .about-data {
+        min-width: 370px;
+    }
+
     /* Start of skills section */
     .skills-container {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
     }
-    .skills-hard, .skills-soft {
+
+    .skills-hard,
+    .skills-soft {
         flex-grow: 1;
         max-width: 500px;
     }
-   
+
     /* End of skills section */
 }
 
 
-@media only screen and (min-width: 768px) {  
+@media only screen and (min-width: 768px) {
+
     /* Start of header styling */
     header {
         font-size: 10px;
         height: 50vh;
         min-height: 350px;
-    } 
+    }
+
     .hero {
         width: 300px;
         top: 30%;
         margin-left: 90px;
     }
+
     .profile-pic {
         height: 210px;
         width: 210px;
         margin: 0;
-        right: 150px; 
+        right: 150px;
         top: 25%;
     }
+
     .menu {
         height: 40vh;
         min-height: 300px;
     }
+
     .navigation {
         margin: 60px 30px;
         height: auto;
         flex-direction: row;
         justify-content: space-evenly;
-        
+
     }
+
     .social {
         width: 300px;
         margin: auto;
     }
+
     /* End of header styling */
 
     /* Start of Intro section */
-    .intro  .buttons {
+    .intro .buttons {
         margin: auto;
         flex-direction: row;
         justify-content: space-around;
         width: 450px;
     }
+
     .intro h2 {
         font-size: 3.3em;
     }
+
     /* End of Intro section */
     /* Start of about section */
     .about-container p {
-        margin: 0 0 20px 0;
         padding: 20px;
         max-width: 650px;
     }
+
     /* End of about section */
- 
+
+    .portfolio-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
 
 }
-    
-@media only screen and (min-width: 1024px) {  
+
+@media only screen and (min-width: 1024px) {
+
     /* Start of header styling */
     header {
-        height: 680px; 
+        height: 680px;
         display: flex;
         justify-content: flex-end;
-    } 
+    }
+
     .hero {
         font-size: 10px;
         width: 320px;
         top: 164px;
         left: 90px;
-        margin:0;
+        margin: 0;
     }
+
     .hamburger {
         display: none;
     }
+
     .menu {
         transform: none;
         position: static;
@@ -438,32 +608,38 @@ header {
         justify-content: space-between;
         align-items: flex-end;
     }
+
     .navigation {
         width: 430px;
         flex-direction: row;
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
         margin-top: 30px;
         margin-right: 40px;
     }
+
     .navigation a {
         font-size: 1.8em;
     }
+
     .social {
         margin-bottom: 40px;
         width: 150px;
         margin-right: 40px;
     }
+
     .social h2 {
         font-size: 1.4em;
         text-align: right;
     }
+
     .social ul {
         justify-content: space-between;
     }
-    
+
     .social a {
         font-size: 2.5em;
     }
+
     .profile-pic {
         height: 250px;
         width: 250px;
@@ -471,12 +647,13 @@ header {
         right: 50%;
         top: 110px;
     }
-/* End of header styling */
-/* Start of about section */
+
+    /* End of header styling */
+    /* Start of about section */
     .about-container {
         flex-direction: row;
         justify-content: space-between;
-        
+
     }
 
     .about-container p {
@@ -484,39 +661,54 @@ header {
         border-left: 2px solid var(--color-primary);
     }
 
-/* End of about section */
-} 
+    /* End of about section */
+    .portfolio-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1440px;
+        margin: auto;
+    }
 
-@media only screen and (min-width: 1200px) { 
-     /* Start of header styling */
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* Start of header styling */
     header {
         max-width: 1440px;
         margin: auto;
     }
+
     .hero {
         font-size: 13px;
         width: 400px;
     }
+
     .navigation {
         width: 500px;
     }
+
     .profile-pic {
         height: 300px;
         width: 300px;
         margin-right: -150px;
         right: 600px;
     }
+
     /* End of header styling */
     /* Start of main section */
-   /* Start of About section */
-   .about-container {
-    max-width: 1170px;
-    margin: auto;
-   }
+    /* Start of About section */
+    .about-container {
+        font-size: 1.5em;
+        max-width: 1170px;
+        margin: auto;
+    }
 
-   /* End of about section */
+    /* End of about section */
+
+    .skills-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
     /* End of main section */
 }
-
-
-
