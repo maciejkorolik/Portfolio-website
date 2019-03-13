@@ -3,24 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 ul {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 button:focus,
 a:focus {
     outline: none;
 }
-
 :root {
     /* Color variables */
     --color-primary: #073b3a;
@@ -224,7 +219,7 @@ header {
 #about h2 {
     text-align: center;
     font-size: 3em;
-    padding-top: 15px;
+    padding: 20px 0 15px 0;
     margin: 10px auto;
 }
 .about-container {
@@ -460,6 +455,7 @@ header {
 .contact-form input,
 .contact-form textarea {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
     width: 100%;
     border: none;
     padding: 10px;
@@ -734,7 +730,7 @@ footer p {
         margin-right: -150px;
         right: 600px;
     }
-    
+
     /* About section */
     .about-container {
         font-size: 1.5em;
